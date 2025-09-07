@@ -1,15 +1,7 @@
-:root {
-    --heading-font: "Raleway", sans-serif;
-    --text-font: "Open San", sans-serif;
-    --primary-color: #2d3748;
-    --seconday-color: beige;
-}
-
-
-
 
 body {
     background-color: white;
+    font-family: "Montserrat", sans-serif;
 }
 
 #course-title {
@@ -17,10 +9,8 @@ body {
     text-align: center;
     padding: 1.5rem;
     font-size: 25px;
-    font-family: var(--heading-font);
     font-weight: bold;
-    border: 1px solid black;
-    color: var(--seconday-color);
+    color: beige;
     background-color: #2d3748;
 }
 
@@ -28,14 +18,13 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    background-color: var(--seconday-color);
+    background-color: #2d3748;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: beige;
     font-size: 15px;
-    font-family: var(--heading-font);
 }
 
 nav a:hover {
@@ -63,16 +52,19 @@ main {
     background-color: beige;
     border-radius: 10px;
     padding: 20px;
-    font-family: var(--primary-color);
 }
 
 h1 {
     text-align: center;
-    font-family: var(--primary-color);
 }
 
 ul a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: #2d3748;
 }
 
+footer {
+    text-align: center;
+    background-color: beige;
+    color: #2d3748;
+}
