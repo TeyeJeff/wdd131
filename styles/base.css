@@ -1,0 +1,78 @@
+:root {
+    --heading-font: "Raleway", sans-serif;
+    --text-font: "Open San", sans-serif;
+    --primary-color: #2d3748;
+    --seconday-color: beige;
+}
+
+
+
+
+body {
+    background-color: white;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 25px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    border: 1px solid black;
+    color: var(--seconday-color);
+    background-color: #2d3748;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: var(--seconday-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-family: var(--heading-font);
+}
+
+nav a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: darkblue;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card img {
+    max-width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: beige;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: var(--primary-color);
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--primary-color);
+}
+
+ul a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
