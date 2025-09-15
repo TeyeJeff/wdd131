@@ -1,0 +1,71 @@
+/* Styles for larger screens */
+@media (min-width: 760px) {
+    /* Header and navigation styling */
+    header {
+        padding: 15px 30px; /* Slightly larger padding for larger screens */
+    }
+
+
+    nav {
+        background-color: transparent; /* Remove background for seamless integration */
+    }
+
+    .navigation {
+        display: flex ; /* Force horizontal navigation */
+        justify-content: flex-end;
+        max-width: none; /* Remove max-width for larger screens */
+        list-style: none;
+    }
+
+    .navigation li {
+        display: block; /* Ensure navigation items are visible */
+        margin-left: 20px;
+    }
+
+    .navigation a {
+        color: white; /* Match header text color */
+        text-decoration: none;
+        font-size: 1.2rem; /* Slightly larger font for large format */
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .navigation a:hover,
+    .navigation a:active {
+        color: white;
+        background-color: black;
+        border-radius: 5px; /* Subtle rounding for hover effect */
+    }
+
+    /* Temple gallery styling */
+    .temples-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+        gap: 20px;
+        justify-items: center;
+        align-items: start;
+    }
+
+    figure {
+        margin: 0;
+        width: 100%;
+        max-width: 300px; /* Match standard image width */
+    }
+
+    figure img {
+        width: 300px; /* Standard width for all images */
+        height: 200px; /* Standard height for all images */
+        object-fit: cover; /* Crop images to fit dimensions */
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .temples-gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+    }
+
+    .navigation a {
+        font-size: 1.3rem; /* Slightly larger font for extra-large screens */
+    }
+}
