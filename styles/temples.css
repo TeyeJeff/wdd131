@@ -1,4 +1,4 @@
-/* Reset default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Header styling */
 header {
     background-color: #4B0082;
     color: white;
@@ -69,7 +68,6 @@ nav {
     content: "X";
 }
 
-/* Main section styling */
 main {
     padding: 20px;
     text-align: center;
@@ -80,27 +78,25 @@ main h1 {
     margin-bottom: 20px;
 }
 
-/* Temple gallery styling with CSS Grid */
 .temples-gallery {
     display: grid;
-    grid-template-columns: 1fr; /* Single column for mobile view */
+    grid-template-columns: 1fr;
     gap: 20px;
     justify-items: center;
-    align-items: start; /* Align items to the top */
+    align-items: start; 
     padding: 0;
 }
 
-/* Style for figure elements within the grid */
 figure {
     margin: 0;
-    width: 100%; /* Ensure figure takes full grid cell width */
-    max-width: 300px; /* Match standard image width */
+    width: 100%; 
+    max-width: 300px; 
 }
 
 figure img {
-    width: 300px; /* Standard width for all images */
-    height: 200px; /* Standard height for all images */
-    object-fit: cover; /* Crop images to fit dimensions */
+    width: 300px; 
+    height: 200px;
+    object-fit: cover; 
     display: block;
 }
 
@@ -110,7 +106,6 @@ figcaption {
     font-size: 1rem;
 }
 
-/* Footer styling */
 footer {
     background-color: #4B0082;
     color: white;
@@ -125,13 +120,12 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 400px) {
     figure img {
-        width: 250px; /* Smaller width for mobile */
-        height: 150px; /* Smaller height for mobile */
+        width: 250px; 
+        height: 150px;
     }
     .temples-gallery {
-        grid-template-columns: 1fr; /* Ensure single column in mobile */
+        grid-template-columns: 1fr;
     }
 }
