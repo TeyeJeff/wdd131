@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona</title>
+    <meta name="description" content="A picture album containing temples">
+    <meta name="author" content="Teye Nathaniel Jeff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+       <h1>Barcelona</h1>
+    </header>
+    <main>
+        <div class="image">
+            <picture>
+                <source srcset="images/barvelona-small.webp" media="max-with: 500px">
+                <source srcset="images/barcelona-medium.webp" media="max-with: 1000px">
+                <img src="images/barcelona-large.webp" alt="barcelona" width="433px" height="800px" class="culer-image">
+            </picture>
+        </div>
+
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 4,268 sq km</li>
+        <li><strong>Population:</strong> 1,700,000</li>
+        <li><strong>Country:</strong> Ghana</li>
+        <li><strong>Languages:</strong> Calatan, Spanish</li>
+        <li><strong>Currency:</strong> Euro</li>
+        <li><strong>Time Zone:</strong> GMT+2</li>
+        <li><strong>Calling Code:</strong> +34</li>
+        <li><strong>Internet TLD:</strong> .bcn</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <div class="weather-icon">🌤️</div>
+      <ul>
+        <li><strong>Temperature:</strong> 13°C</li>
+        <li><strong>Conditions:</strong> Moderate Rainfall</li>
+        <li><strong>Wind:</strong> 11 km/h</li>
+        <li><strong>Wind Chill:</strong> 19.7°C</li>
+      </ul>
+    </section>
+    </main>
+    <footer>
+        <p>
+            ©️<span id="currentyear"></span>🌴Teye Nathaniel Jeff 🌴 Ghana
+        </p>
+        <p>
+            Last Modification: <span id="lastmodified"></span>
+        </p>
+    </footer>
+</body>
+</html>
