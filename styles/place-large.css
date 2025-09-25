@@ -1,1 +1,40 @@
-   
+@media (min-width: 1001px) {
+  main {
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .image {
+    flex: 2;
+    margin-bottom: 0;
+  }
+
+  .culer-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .data {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .weather {
+    flex: 1;
+    margin-left: 10px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .data, .weather {
+    padding: 15px;
+  }
+}
