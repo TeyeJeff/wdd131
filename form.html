@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label for="product">Product Name <br></label>
+                <select name="product" id="product" required>
+                    <option disabled selected>Choose a Product</option>
+                    <option value="shoes">Adidas Sabalo</option>
+                    <option value="console">Playstation 5</option>
+                    <option value="shirt">Polo Shirt</option>
+                    <option value="phone">Samsung Galaxy S25 Ultra</option>
+                    <option value="laptop">Macbook M2 Pro</option>
+                    <option value="earbud">Galaxy Buds Pro</option>
+                </select>
+                
+                <label>Overall Rating</label><br>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5">★★★★★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★★★★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★★★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
+
+                <label for="date">Date of Installation</label>
+                <input type="date" name="date" id="date" required><br>
+                
+                <label>Which features did you find useful in the product?<br><span class="hint">(Check all that apply)</span></label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="features" name="durabilty" value="yes">Durabilty</label>
+                    <label><input type="checkbox" id="features" name="ease" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" id="features" name="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" id="features" name="design" value="yes">Design</label>
+                </div>
+
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review"></textarea>
+                
+                <label for="name">Your Name <span class="Optional">(Optional)</span></label>
+                <input type="text" id="name" name="name">
+
+                <input type="submit" value="Post Review" class="btn">
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+            ©️<span id="currentyear"></span>🌴Teye Nathaniel Jeff 🌴 Ghana
+        </p>
+        <p>
+            Last Modification: <span id="lastmodified"></span>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2e003e;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+form {
+    background-color: #d8cfe5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin: 10px 0 4px;
+    color: #2e003e;
+}
+
+select, input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.rating label {
+    font-size: 1.3rem;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #fff;
+    color: #2e003e;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10px;
+    background-color: #2e003e;
+    color: #fff;
+}
