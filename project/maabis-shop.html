@@ -18,7 +18,7 @@
         <img src="images/maabislogo.jpg" alt="MaabisJewels" class="logo">
         <nav class="navigation">
             <ul>
-                <li><a href="maabis.html" class="link">Home Page</a></li>
+                <li><a href="maabis.html" class="link">Home</a></li>
                 <li><a href="maabis-aboutus.html" class="link">About Us</a></li>
                 <li><a href="maabis-shop.html" class="link">Shop</a></li>
                 <li><a href="maabis-contactus.html" class="link">Contact Us</a></li>
@@ -26,19 +26,25 @@
         </nav>
     </header>
     <main>
-        <input type="text" id="searchInput" placeholder="Search by branch name....">
-        <button id="searchBtn">Search</button>
+        <h1 class="products">Discover Jewelry That Suits Your Taste.</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by brand name....">
+            <button id="searchBtn">Search</button>
+        </div>
 
         <div id="results"></div>
-
-
         <div>
             <nav id="menu">
+                <button class="hamburger" aria-label="Toggle categories">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             <ul class="navigation2">
                 <li><a id="all" href="#" title="All">All</a> </li>
                 <li><a id="watch" href="#" title="Watches">Watches</a></li>
                 <li><a id="rings" href="#" title="Rings">Rings</a></li>
-                <li><a id="bracelets" href="#" title="bracelets">Bracelets</a></li>
+                <li><a id="bracelets" href="#" title="Bracelets">Bracelets</a></li>
                 <li><a id="earrings" href="#" title="Earrings">Earrings</a></li>
                 <li><a id="anklets" href="#" title="Anklets">Anklets</a></li>
             </ul>           
@@ -85,6 +91,21 @@
                 </ul>
             </div>
         </div>
+
+        <div class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Sign up for our newsletter to receive the lastest adventure updates!</p>
+            <form class="newsletter-form">
+                <fieldset>
+                    <legend>NewsLetter</legend>
+                    <label for="fullname">Fullname</label>
+                    <input type="text" id="fullname" name="fullname">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your mail">
+                    <button type="submit">Subscribe</button>
+                </fieldset>
+            </form>
+            </div>
 
     </main>
 </body>

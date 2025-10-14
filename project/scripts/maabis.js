@@ -1,10 +1,11 @@
-const hambutton = document.querySelector("#menu");
-const navigation2 = document.querySelector(".navigation2")
+const hamburger = document.querySelector(".hamburger");
+const navigation2 = document.querySelector(".navigation2");
 
-hambutton.addEventListener("click", () => {
-    navigation2.classList.toggle(show);
-    hambutton.classList.toggle("show");
-})
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("show");
+    navigation2.classList.toggle("show");
+});
+
 
 const jewelries = [
     {
@@ -234,7 +235,7 @@ function displayJewelries(jewelriesToShow) {
         card.appendChild(material);
 
         const price = document.createElement("p");
-        price.textContent = jewelry.price;
+        price.innerHTML = `<strong>${jewelry.price}</strong>`;
         card.appendChild(price);
 
         jewelryContainer.appendChild(card);
@@ -274,31 +275,43 @@ function filteredJewelries(category) {
 document.getElementById('all').addEventListener('click', (e) => {
     e.preventDefault();
     filteredJewelries('All');
+    navigation2.classList.remove("show");
+    hamburger.classList.remove("show");
 })
 
 document.getElementById('watch').addEventListener('click', (e) => {
     e.preventDefault();
     filteredJewelries('Watch');
+    navigation2.classList.remove("show");
+    hamburger.classList.remove("show");
 })
 
 document.getElementById('rings').addEventListener('click', (e) => {
     e.preventDefault();
     filteredJewelries('Ring');
+    navigation2.classList.remove("show");
+    hamburger.classList.remove("show");
 })
 
 document.getElementById('earrings').addEventListener('click', (e) => {
     e.preventDefault();
     filteredJewelries('Earring');
+    navigation2.classList.remove("show");
+    hamburger.classList.remove("show");
 })
 
 document.getElementById('bracelets').addEventListener('click', (e) =>{
     e.preventDefault();
     filteredJewelries('Bracelet');
+    navigation2.classList.remove("show");
+    hamburger.classList.remove("show");
 })
 
 document.getElementById('anklets').addEventListener('click', (e) => {
     e.preventDefault();
     filteredJewelries('Anklet');
+    navigation2.classList.remove("show");
+    hamburger.classList.remove("show");
 })
 
 displayJewelries(jewelries);

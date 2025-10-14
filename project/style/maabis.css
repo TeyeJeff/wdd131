@@ -246,3 +246,143 @@ header {
 .newsletter-form button:hover {
     opacity: 0.6;
 }
+
+
+.products {
+    text-align: center;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#searchInput {
+    width: 60%;
+    max-width: 600px;
+    padding: 0.75rem;
+    border: 2.5px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#searchBtn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s; 
+}
+
+#searchBtn:hover {
+    background-color: #555;
+}
+
+.navigation2 {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.navigation2 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.navigation2 a:hover,
+    .navigation2 a:active {
+        color: white;
+        background-color: black;
+        border-radius: 5px; 
+    }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    margin-left: 1rem;
+    margin: 1rem;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.hamburger.show span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.show span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.show span:nth-child(2) {
+    transform: rotate(45deg) translate(7px, -7px);
+}
+
+
+.navigation2.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 170px; 
+    left: 5%;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}   
+
+.navigation2.show li {
+    margin: 0.5rem 0;
+} 
+
+.jewelry-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+.jewelry-card {
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0.1);
+    text-align: center;
+}
+
+.jewelry-card img {
+    width: 100%;
+    height: 300px;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+}
