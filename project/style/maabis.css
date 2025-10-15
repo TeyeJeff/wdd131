@@ -484,30 +484,22 @@ header {
     list-style: none;
     padding: 0;
     margin-top: 1rem;
+    margin-right: 2.5rem;
 }
 
-li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    background-color: #f8f8f8;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
-}
 
-li .delete-btn {
+.delete-btn {
     background: none;
     border: none;
     color: #ff4444;
     cursor: pointer;
     font-size: 1rem;
-    padding: 0 0.5rem;
-    max-width: 50px;
+    padding: 1rem;
+    max-width: 15px;
 }
 
 
-li .delete-btn:hover {
+.delete-btn:hover {
     color: #cc0000;
 }
 
