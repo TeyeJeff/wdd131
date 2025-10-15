@@ -140,7 +140,7 @@ header {
 
 .collections img {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -153,6 +153,7 @@ header {
 
 .collections nav {
     margin-top: 2rem;
+    list-style: none;
 }
 
 .collections a {
@@ -213,8 +214,11 @@ header {
 }
 
 .newsletter-form fieldset {
-    border: none;
-    padding: 0;
+    border: 1px solid #333;
+    margin: 0.5rem;
+    border-radius: 5px;
+
+    padding: 2.5rem;
 }
 
 .newsletter-form label {
@@ -521,4 +525,32 @@ header {
     margin: 0 auto 1rem;
     overflow: hidden;
 }
+
+footer {
+    border-top: 1px solid #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ddd;
+}
+
+footer p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row-reverse;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    display: block;
+}
+
+.socialmedia img {
+    width: 15px;
+    height: 15px;
+}
+
 
